@@ -8,48 +8,8 @@ function App() {
   
   
   useEffect(() => {
-    // fetch(`https://staging-api.dahmakan.com/test/orders?sort[0]=order_id&sort[1]=paid_withdesc`)
-    //   .then((response) => {
-    //     return response.json();
-    //   }).then((response) => {
-    //     console.log(response)
-    //     setData1(response)
-    //   }).catch((error) => {
-    //     console.log(error)
-    //   })
     myCall()
   }, [])
-
-  /*  const data = React.useMemo(()=>[
-   {
-      
-     arrives_at_utc: data1.orders,
-     order_id: data1.orders,
-     paid_with: data1.orders,
-     total_paid: data1.orders
-   },
-   {
-
-   }
- ],[]); */
-  /* const columns = React.useMemo(()=>[
-    {
-     heading:'order_id',
-     value:'order_id'
-    },
-    {
-      heading:'arrives_at_utc',
-      value:'arrives_at_utc'
-     },
-     {
-      heading:' paid_with',
-      value:' paid_with'
-     },
-     {
-      heading:' total_paid',
-      value:' total_paid'
-     },
-  ],[])  */
 
   // 2. function defination
   let myCall = async()=>{
